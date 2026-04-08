@@ -1,0 +1,42 @@
+MULTI-AGENT AI WORKSPACE - HACKATHON DEMO SCRIPT
+==============================================
+
+SCENARIO 1: THE WARM-UP (General Intelligence)
+-----------------------------------------------
+Prompt: "Hi! What time is it currently in IST?"
+Result: Shows the General_Worker correctly fetching system time and greeting the user without falling into "routing paralysis".
+
+SCENARIO 2: CRM INTELLIGENCE & JIRA CREATION
+-----------------------------------------------
+Prompt: "Titanium Logistics is reporting 500ms latency spikes in their production API. Open a high-priority bug ticket."
+Result: 
+- AI recognizes "Titanium Logistics".
+- Automatically performs a wildcard CRM lookup.
+- Finds their "Premium: 99.9%" SLA.
+- Creates a Jira ticket with the SLA context enriched: "[CRM CONTEXT: Tier: Premium: 99.9%, Status: Maintenance]".
+
+SCENARIO 3: AUTOMATED STATUS ESCALATION
+-----------------------------------------------
+Prompt: "Acme Corp just reported a critical outage. Sync with my calendar for a 30m review at 10am tomorrow, and open a ticket."
+Result:
+- AI finds "Acme Corp".
+- Automatically UPDATES the CRM Status to "Critical Outage Reported" in real-time on your dashboard.
+- Schedules the Google Calendar event for 10:00 AM IST tomorrow.
+- Creates the Jira ticket with the "Standard: 99.5%" context.
+
+SCENARIO 4: CLOSING THE LOOP (Jira Transitions)
+-----------------------------------------------
+Prompt: "Good news, we fixed the latency issue. Go ahead and close Jira MDP-12."
+Result:
+- AI parses "action: close".
+- Identifies the specific transition for "MDP-12".
+- Closes the ticket natively on Atlassian Cloud.
+- Dynamically updates the Streamlit "Jira Tracker" tab to show "Closed".
+
+SCENARIO 5: CROSS-PLATFORM ORCHESTRATION
+-----------------------------------------------
+Prompt: "Search the CRM for Aether Cloud, update their status to Maintenance, and book a 1-hour follow-up with them for next Monday."
+Result:
+- Updates Aether Cloud in CRM.
+- Books a 60-minute session for the relative date "Next Monday".
+- Displays success across the Live Operations Hub.
